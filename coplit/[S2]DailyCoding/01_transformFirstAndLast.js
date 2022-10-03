@@ -20,6 +20,7 @@ function transformFirstAndLast(arr) {
   }
   return result;
 }
+// 입출력 예시
 let arr = ["Queen", "Elizabeth", "Of Hearts", "Beyonce"];
 let output = transformFirstAndLast(arr);
 console.log(output); // --> { Queen : 'Beyonce' }
