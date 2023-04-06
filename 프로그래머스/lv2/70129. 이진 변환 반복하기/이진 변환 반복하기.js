@@ -1,13 +1,13 @@
 function solution(s) {
-    let deleteZero =0
+    let zero =0
     let count =0
     while(s.length!==1){
         const originLen = s.length
         s=[...s].filter(v=>v==='1').join('')
         const len = s.length
-        deleteZero+=originLen-len
+        zero+=originLen-len
         s=len.toString(2)
         count++
     }
-    return[count,deleteZero]
+    return[count,zero]
 }
