@@ -1,3 +1,9 @@
 function solution(array, height) {
-    return array.filter(a => a > height).length;
+    let arr =[]
+    for(let i=0; i<array.length; i++) {
+        if(array[i]>height) {
+            arr.push(array[i])
+        }
+    }
+    return arr.length
 }
