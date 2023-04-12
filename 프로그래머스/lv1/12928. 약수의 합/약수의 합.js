@@ -1,10 +1,9 @@
 function solution(n) {
-    let arr = [];
+    let sum = 0
     for(let i=1; i<=n; i++) {
         if(n % i === 0) {
-            arr.push(i)
+            sum+=i
         }
     }
-    let sum = arr.reduce((a,b) => a+b,0)
-    return sum
+    return sum;
 }
