@@ -1,10 +1,4 @@
 function solution(numbers) {
-  let sum = 0;
-  let answer = 0;
-
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  answer = sum / numbers.length;
-  return answer;
+    let a = numbers.reduce((acc,cur) => acc+cur,0) / numbers.length
+    return a.toFixed(1)
 }
