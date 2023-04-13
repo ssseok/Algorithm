@@ -1,7 +1,9 @@
 function solution(n) {
-    for(let i=1; i<=10000000; i++){
+    let a = []
+    for(let i=1; i<=n; i++) {
         if(n % i === 1) {
-            return Math.min(i)
+             a.push(i)
         }
     }
+    return a[0]
 }
