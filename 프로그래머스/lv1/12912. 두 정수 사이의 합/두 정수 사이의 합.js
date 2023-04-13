@@ -1,14 +1,13 @@
 function solution(a, b) {
-    let answer = 0;
-    if(a === b) return a;
-    if (a < b){
-        for(let i = a; i <= b; i++){
-            answer += i;
+    let aa = 0;
+    if(a < b) {
+    for(let i = a; i<=b; i++) {
+        aa += i
         }
-    }else if (a > b){
-        for(let i = b; i <= a; i++){
-            answer += i;
+    } else {
+        for(let i = b; i<=a; i++) {
+        aa += i
         }
     }
-    return answer
+    return aa
 }
