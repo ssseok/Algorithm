@@ -1,11 +1,11 @@
 function solution(absolutes, signs) {
-    let answer = 0;
-    for (let i = 0; i < absolutes.length; i++) {
-        if (signs[i] === true) {
-            answer += absolutes[i];
+    let arr = []
+    for(let i=0; i<absolutes.length; i++) {
+        if(signs[i] === true) {
+           arr.push(absolutes[i])
         } else {
-            answer -= absolutes[i];
+            arr.push(-absolutes[i])
         }
     }
-    return answer
+    return arr.reduce((acc,cur) => acc+cur,0)
 }
