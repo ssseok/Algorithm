@@ -1,3 +1,4 @@
+
 function solution(phone_number) {
     let string = ""
     let slice = phone_number.slice(-4)
