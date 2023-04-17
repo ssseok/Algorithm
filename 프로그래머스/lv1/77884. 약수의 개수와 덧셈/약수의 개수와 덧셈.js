@@ -1,26 +1,19 @@
-function divisors(num) {
-    let count = 0;
-    
-    for(let i = 1; i <= num; i++) {
-        if(num % i == 0) {
-            count++;
-        }
-    }
-    
-    return count;
-}
-
 function solution(left, right) {
-    let answer = 0;
+    let arr = [];
+const getDivisors = (num) => {
+    const divisors = [];
+    for(let i = 1 ; i <= num ; i++){
+        if(num % i === 0) divisors.push(i);
+    }
+    return divisors;
+}
+for(let i=left; i<=right; i++) {
     
-    for(let i = left; i <= right; i++) {
-        let count = divisors(i);          
-        if (count % 2 === 0) {
-            answer += i;
-        } else {
-            answer -= i;
-        }      
-    }   
-    
-    return answer;
+    if(getDivisors(i).length % 2 === 0) {
+        arr.push(i)
+    } else {
+        arr.push(-i)
+    }
+}
+    return arr.reduce((acc,cur) => acc+cur, 0)
 }
