@@ -1,10 +1,10 @@
 # [level 2] 다음 큰 숫자 - 12911 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12911) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12911?language=javascript) 
 
 ### 성능 요약
 
-메모리: 33.3 MB, 시간: 0.08 ms
+메모리: 33.4 MB, 시간: 0.04 ms
 
 ### 구분
 
@@ -12,7 +12,7 @@
 
 ### 채점결과
 
-<br/>정확성: 70.0<br/>효율성: 30.0<br/>합계: 100.0 / 100.0
+Empty
 
 ### 문제 설명
 
